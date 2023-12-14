@@ -43,10 +43,12 @@ body, html {
 #notificationSVG{
     grid-column:15;
 }
-#profilePicture{
+#headerProfile{
     grid-column: 16;
-    width:fit-content;
-    text-wrap: nowrap;
+    height: 50px;
+    width: 50px;
+
+    border-radius: 5px;
 }
 #profileName{
     font-size: x-large;
@@ -54,6 +56,7 @@ body, html {
     width: fit-content;
     text-wrap: nowrap;
 }
+
 
 
 
@@ -68,18 +71,27 @@ body, html {
     grid-template-columns: repeat(20, 1fr);
     grid-template-rows: 1;
     gap: 10px;
+    color: black;
 }
 #navProfile{
-    grid-row: 3;
+    align-self: center;
+    grid-column: 3;
+    height: 60px;
+    width: 60px;
+    border-radius: 5px;
 }
 #handleContainer{
+    display: flex;
+    flex-direction: column;
+    text-wrap: nowrap;
+    justify-content: center;
 
 }
 #greeting{
-
+    font-size: large
 }
 #handle{
-
+    font-size: x-large;
 }
 .navButton{
     align-self: center;
