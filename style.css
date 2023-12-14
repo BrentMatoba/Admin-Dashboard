@@ -35,18 +35,20 @@ body, html {
 }
 #searchbar{
     grid-column: 3/12;
+    height: 30px;
+    border-radius: 20px;
 }
 #notificationSVG{
     grid-column:15;
 }
 #profilePicture{
-    grid-column: 16/17;
+    grid-column: 16;
     width:fit-content;
     text-wrap: nowrap;
 }
 #profileName{
     font-size: x-large;
-    grid-column:18/19;
+    grid-column:17/18;
     width: fit-content;
     text-wrap: nowrap;
 }
