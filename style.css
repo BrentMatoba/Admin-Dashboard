@@ -1,13 +1,14 @@
 /*https://tailwindcss.com/docs/customizing-colors
 use the Sky pallette from this website.*/
-
+/*Need to change text in sidebar to links, not divs*/
 body, html {
     height: 100%;
     width: 100%;
     margin: 0;
   }
   :root{
-    --color1:
+    --color1:skyblue;
+    --background-color:
   }
 .grid-container{
     display: grid;
@@ -37,6 +38,7 @@ body, html {
     grid-column: 3/12;
     height: 30px;
     border-radius: 20px;
+    background-color: var(--background-color);
 }
 #notificationSVG{
     grid-column:15;
@@ -55,6 +57,52 @@ body, html {
 
 
 
+.nav{
+    width: auto;
+    height: auto;
+    background-color: #e0f2fe;
+    color: white;
+    grid-column: 5/20;
+    grid-row: 3/5;
+    display: grid;
+    grid-template-columns: repeat(20, 1fr);
+    grid-template-rows: 1;
+    gap: 10px;
+}
+#navProfile{
+    grid-row: 3;
+}
+#handleContainer{
+
+}
+#greeting{
+
+}
+#handle{
+
+}
+.navButton{
+    align-self: center;
+    width: 100px;
+    height: 45px;
+    border-radius: 20px;
+    background-color: var(--color1);
+    color:white;
+}
+#newButton{
+    grid-column: 16;
+}
+#uploadButton{
+    grid-column: 17;
+}
+#shareButton{
+    grid-column: 18;
+}
+
+
+
+
+
 
 
 
@@ -62,7 +110,7 @@ body, html {
 .sidebar{
     width: auto;
     height: auto;
-    background-color: #e11d48;
+    background-color: var(--color1);
     color: white;
     grid-column: 1/5;
     grid-row: 1/20;
@@ -97,14 +145,20 @@ li{
 .sideList2{
     margin-top:50px;
 }
-.nav{
-    width: auto;
-    height: auto;
-    background-color: #e0f2fe;
-    color: white;
-    grid-column: 5/20;
-    grid-row: 3/5;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .announcements{
     width: auto;
     height: auto;
