@@ -22,6 +22,18 @@ body, html {
     grid-column:5/20;
     grid-row:1/3;
 }
+.headerSVG{
+    width: 40px;
+    height: 40px;
+}
+
+
+
+
+
+
+
+
 .sidebar{
     width: auto;
     height: auto;
