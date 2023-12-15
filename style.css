@@ -7,7 +7,9 @@ body, html {
     margin: 0;
   }
   :root{
-    --color1:skyblue;
+    --color1:skyblue; /*sidebar*/
+    --color2:white; /*main background color*/
+    --color3:orange; /*card accent*/
     --background-color:
   }
 .grid-container{
@@ -194,10 +196,9 @@ li{
     grid-column: 5/15;
     grid-row:5/20;
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(5, 1fr);
-    gap: 20px;
+
 }
+
 #contentHeader{
     grid-column: 2;
     grid-row:1;
@@ -207,7 +208,29 @@ li{
 .card{
     width: 300px;
     height: 200px;
-    background-color: black;
+    background-color:var(--color2);
+    color:black;
+    border-left-color: var(--color3);
+    border-left-style: solid;
+    border-left-width: 5px;
+    border-radius: 5px;
+    display:grid;
+    grid-template-columns: repeat(4, 22%);
+    grid-template-rows: repeat(4, 22%);
+    gap:5px;
+}
+.card-title{
+
+    grid-row: 1;
+    grid-column: 2;
+    margin-left: -40px;
+    text-wrap: nowrap;
+}
+.card-content{
+    margin-left: -40px;
+    grid-row:2/5;
+    grid-column: 2/5;
+    color:grey;
 }
 #c1{
     grid-column: 2;
