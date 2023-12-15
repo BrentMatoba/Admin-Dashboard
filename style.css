@@ -176,15 +176,13 @@ li{
     grid-column: 15/20;
     grid-row:5/13;
 }
+#announcementsHeader{
+    margin-left: 10%;
+}
 
 .announcementCardContainer{
     height: 100%;
     width: 100%;
-    /*
-    display: grid;
-    grid-template-columns: repeat(1);
-    grid-template-rows: repeat(3, 1fr);
-    */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -301,7 +299,8 @@ li{
     grid-column: 2;
     grid-row:2;
 }
-#c2{grid-column: 4;
+#c2{
+    grid-column: 4;
     grid-row:2;}
 #c3{
     grid-column: 2;
@@ -340,4 +339,35 @@ li{
     color: white;
     grid-column: 15/20;
     grid-row:13/20;
+}
+#trendingHeader{
+    margin-left:10%;
+}
+.trendingContainer{
+    height: 82%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color:black;
+
+}
+.trendingCard{
+    width: 300px;
+    height:100px;
+    background-color: white;
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: repeat(6, 16.66%);
+    grid-template-rows:repeat(5, 20%);
+    text-wrap: nowrap;
+
+}
+.tcTitle{
+    grid-row:2;
+    grid-column:3/4;
+}
+.tcContent{
+    grid-column: 3/4;
+    grid-row:3;
 }
