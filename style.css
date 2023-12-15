@@ -358,10 +358,10 @@ li{
     background-color: white;
     border-radius: 5px;
     display: grid;
-    grid-template-columns: repeat(6, 16.66%);
+    grid-template-columns: repeat(5, 16.66%);
     grid-template-rows:repeat(5, 20%);
     text-wrap: nowrap;
-
+    column-gap: 15px;
 }
 .tcTitle{
     grid-row:2;
@@ -370,4 +370,11 @@ li{
 .tcContent{
     grid-column: 3/4;
     grid-row:3;
+}
+.trendingPic{
+    width: 60px;
+    height: 60px;
+    border-radius: 5px;
+    grid-row:2;
+    grid-column: 2;
 }
