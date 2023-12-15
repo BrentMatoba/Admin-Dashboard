@@ -220,7 +220,6 @@ li{
     gap:5px;
 }
 .card-title{
-
     grid-row: 1;
     grid-column: 2;
     margin-left: -40px;
@@ -231,6 +230,16 @@ li{
     grid-row:2/5;
     grid-column: 2/5;
     color:grey;
+}
+.cardSVG{
+    width: 30px;
+    height: 30px;
+    
+}
+.SVGcontainer{
+    grid-row: 4;
+    grid-column: 3;
+    text-wrap:nowrap;
 }
 #c1{
     grid-column: 2;
