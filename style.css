@@ -1,17 +1,16 @@
-/*https://tailwindcss.com/docs/customizing-colors
-use the Sky pallette from this website.*/
-/*Need to change text in sidebar to links, not divs*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 body, html {
     height: 100%;
     width: 100%;
     margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   }
   :root{
     --color1:skyblue; /*sidebar*/
     --color2:white; /*main background color*/
     --color3:orange; /*card accent*/
     --color4:#e0f2fe; /*header*/
-
+    --color5:#bfdbfe; /*Project background color*/
   }
 .grid-container{
     display: grid;
@@ -179,7 +178,6 @@ li{
 #announcementsHeader{
     margin-left: 10%;
 }
-
 .announcementCardContainer{
     height: 100%;
     width: 100%;
@@ -188,7 +186,6 @@ li{
     align-items: center;
     
 }
-
 .announcementCard{
     width: 250px;
     height: 120px;
@@ -238,14 +235,13 @@ li{
 .content-container{
     width: auto;
     height: auto;
-    background-color: #bfdbfe;
+    background-color: var(--color5);
     color: white;
     grid-column: 5/15;
     grid-row:5/20;
     display: grid;
 
 }
-
 #contentHeader{
     grid-column: 2;
     grid-row:1;
@@ -318,16 +314,6 @@ li{
     grid-column: 4;
     grid-row: 4;
 }
-
-
-
-
-
-
-
-
-
-
 
 
 
